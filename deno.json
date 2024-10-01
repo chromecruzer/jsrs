@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "hono": "jsr:@hono/hono@^4.6.3",
+    "@bunvader/rustacean": "./node_modules/@bunvader/rustacean/index.js"
+  },
+  "tasks": {
+    "post-install": "npm i @bunvader/rustacean && cd node_modules/@bunvader/rustacean && npm i && npm run build",
+    "start": "deno run -A --watch-hmr main.ts"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}

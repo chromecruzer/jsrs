@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@bunvader/rustacean": "^0.0.2"
+  }
+}
